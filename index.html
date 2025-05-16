@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>S22ulta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    </div>
+   
+
+    <section class="sec">
+        <header>
+            <a href="#"><img src="samsung-white-logo-png-image-11662412120c9nealvs3b-removebg-preview.png" class="logo"> </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Buy now</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Galaxy S22 Ultra </h2>
+                <p>Today, Samsung Electronics officially announced its new Galaxy S22 Ultra smartphone within
+                     the new Galaxy S22 series, which is the phone that comes to offer users an alternative to 
+                     the Galaxy Note phones, as the Galaxy S22 Ultra </p>
+                
+            </div>
+                <div class="imgBox">
+                    <img src="1.png" class="p1">
+                
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="1.png" onclick="imgSlider('1.png');changeBgColor('#7E5B62')" ></li>
+            <li><img src="2.png"  onclick="imgSlider('2.png');changeBgColor('#415A56')"></li>
+            <li><img src="3.png" onclick="imgSlider('3.png');changeBgColor('#000000')" ></li>
+        </ul>
+
+       
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything ){
+            document . querySelector ('.p1').src = anything; 
+        }
+
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
